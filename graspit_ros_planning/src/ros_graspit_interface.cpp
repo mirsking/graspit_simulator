@@ -229,7 +229,7 @@ int RosGraspitInterface::init(int argc, char **argv)
   srand(1);
   //initialize database connection
   //careful: we pass a null for the grasp allocator as we don't know yet which hand we'll be using
-  db_mgr_ = new db_planner::RosDatabaseManager("localhost", "5432", "zun", "zun", "household_objects-0.2", NULL, NULL);
+  db_mgr_ = new db_planner::RosDatabaseManager("localhost", "5432", "willow", "willow", "household_objects", NULL, NULL);
   //use the special allocator for models that get geometry directly from the database
   GeomGraspitDBModelAllocator* allocator = new GeomGraspitDBModelAllocator(db_mgr_);
   db_mgr_->SetModelAllocator(allocator);

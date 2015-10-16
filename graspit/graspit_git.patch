@@ -36,7 +36,7 @@ index 590dc29..3984317 100644
      </property>
      <property name="text" >
 -     <string>localhost</string>
-+     <string>wgs36</string>
++     <string>localhost</string>
      </property>
     </widget>
     <widget class="QLabel" name="hostLabel" >
